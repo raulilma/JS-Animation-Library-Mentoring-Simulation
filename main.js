@@ -4,6 +4,8 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container").appendChild(renderer.domElement);
 
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
 // TODO 1: Ubah background dari scene Three.js ke warna biru tua
 
 // TODO 2: Inisialisasi scene Three.js dengan geometri-geometri sesuai preferensi
